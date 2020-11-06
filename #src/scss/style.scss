@@ -274,17 +274,17 @@ $maxWidth: 1200;
         color: $red;
     }
 
-    .header-top {
+    &__top {
         background-color: #363636;
 
-        &__container {
+        &-container {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 10px 0;
         }
 
-        &__contacts-wrapper {
+        &-contacts-wrapper {
             display: flex;
             align-items: center;
             font-family: Roboto;
@@ -292,7 +292,7 @@ $maxWidth: 1200;
             font-weight: 400;
         }
 
-        &__contacts {
+        &-contacts {
             color: #898989;
 
             svg {
@@ -308,13 +308,13 @@ $maxWidth: 1200;
             }
         }
 
-        &__contacts-telephone {
+        &-telephone {
             margin-right: 77px;
         }
 
-        &__contacts-mail {}
+        &-mail {}
 
-        &__socials {
+        &-socials {
             display: flex;
             align-items: center;
 

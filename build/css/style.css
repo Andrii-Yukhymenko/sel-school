@@ -506,11 +506,11 @@ h6 {
   color: #e5493a;
 }
 
-.header .header-top {
+.header__top {
   background-color: #363636;
 }
 
-.header .header-top__container {
+.header__top-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,7 +523,7 @@ h6 {
   padding: 10px 0;
 }
 
-.header .header-top__contacts-wrapper {
+.header__top-contacts-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,27 +535,27 @@ h6 {
   font-weight: 400;
 }
 
-.header .header-top__contacts {
+.header__top-contacts {
   color: #898989;
 }
 
-.header .header-top__contacts svg {
+.header__top-contacts svg {
   margin-right: 10px;
 }
 
-.header .header-top__contacts:hover {
+.header__top-contacts:hover {
   color: #e5493a;
 }
 
-.header .header-top__contacts:hover path {
+.header__top-contacts:hover path {
   fill: #e5493a;
 }
 
-.header .header-top__contacts-telephone {
+.header__top-telephone {
   margin-right: 77px;
 }
 
-.header .header-top__socials {
+.header__top-socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,11 +564,11 @@ h6 {
           align-items: center;
 }
 
-.header .header-top__socials li + li {
+.header__top-socials li + li {
   margin-left: 5px;
 }
 
-.header .header-top__socials svg:hover path {
+.header__top-socials svg:hover path {
   fill: #e5493a;
 }
 
