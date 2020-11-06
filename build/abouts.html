@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ! Адаптивность -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Web</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+    <div class="header-top">
+        <div class="container header-top__container">
+            <div class="header-top__contacts-wrapper">
+                <a class="header-top__contacts header-top__contacts-telephone" href="tel:+440 875369208"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16"><g><g><path d="M1.7 15.905C1.007 15.811.04 15.39.04 13.767V1.993s.034-2.06 2.213-2.06h5.346s2.396-.072 2.396 2.08v11.213c0 .343-.01.905-.12 1.234-.203.607-.752 1.447-2.233 1.447H3.077c-.38 0-1 .049-1.377-.002zm3.28-.932c.326 0 .588-.239.588-.53 0-.294-.262-.53-.588-.53-.322 0-.586.236-.586.53 0 .291.264.53.586.53zM5.985.933H4.048c-.38 0-.69.222-.69.498 0 .275.31.498.69.498h1.937c.38 0 .69-.223.69-.498s-.31-.499-.69-.499zm2.213 1.994H1.835c-.38 0-.69.279-.69.622v8.743c0 .343.31.622.69.622h6.363c.381 0 .69-.279.69-.622V3.549c0-.343-.309-.622-.69-.622z"/><path fill="#555" d="M1.7 15.905C1.007 15.811.04 15.39.04 13.767V1.993s.034-2.06 2.213-2.06h5.346s2.396-.072 2.396 2.08v11.213c0 .343-.01.905-.12 1.234-.203.607-.752 1.447-2.233 1.447H3.077c-.38 0-1 .049-1.377-.002zm3.28-.932c.326 0 .588-.239.588-.53 0-.294-.262-.53-.588-.53-.322 0-.586.236-.586.53 0 .291.264.53.586.53zM5.985.933H4.048c-.38 0-.69.222-.69.498 0 .275.31.498.69.498h1.937c.38 0 .69-.223.69-.498s-.31-.499-.69-.499zm2.213 1.994H1.835c-.38 0-.69.279-.69.622v8.743c0 .343.31.622.69.622h6.363c.381 0 .69-.279.69-.622V3.549c0-.343-.309-.622-.69-.622z"/></g></g></svg> +440 875369208</a>
+                <a class="header-top__contacts header-top__contacts-mail" href=“mailto:info@sitename.com”><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"><g><g><path d="M16.48.031a.38.38 0 0 1 .406.086.388.388 0 0 1 .091.408l-5.09 14.014a1.192 1.192 0 0 1-1.827.56l-4.758-3.483L16.233.783 3.871 10.567.39 8.019a1.081 1.081 0 0 1 .247-1.88zM7.157 14.38c.034.047-1.195.857-2.136 1.468a.831.831 0 0 1-1.272-.555l-.676-3.716-.03-.163z"/><path fill="#555" d="M16.48.031a.38.38 0 0 1 .406.086.388.388 0 0 1 .091.408l-5.09 14.014a1.192 1.192 0 0 1-1.827.56l-4.758-3.483L16.233.783 3.871 10.567.39 8.019a1.081 1.081 0 0 1 .247-1.88zM7.157 14.38c.034.047-1.195.857-2.136 1.468a.831.831 0 0 1-1.272-.555l-.676-3.716-.03-.163z"/></g></g></svg> info@sitenafme.com</a>
+            </div>
+            <ul class="header-top__socials">
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__logo-wrapper">
+                <a href="#">
+                    <p class="header__logo">èxe</p>
+                </a>
+                <div class="header__burger"><span></span></div>
+            </div>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="index.html">home</a></li>
+                    <li class="header__menu-item"><a href="portfolio.html">portfolio</a></li>
+                    <li class="header__menu-item"><a href="blog.html">blog</a></li>
+                    <li class="header__menu-item"><a href="abouts.html">about us</a></li>
+                    <li class="header__menu-item"><a href="project.html">project</a></li>
+                    <li class="header__menu-item"><a href="contacts.html">contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="scrolline">
+    <div class="scrolline__inline"></div>
+</div>
+
+    <section class="agency">
+        <p class="title">Creative Digital Agency</p>
+        <p class="subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <div class="content container">
+            <div class="content">
+                <div class="content__item">
+                    <img src="img/abouts/content-img.png" alt="" class="content__img">
+                </div>
+                <div class="content__item">
+                    <p class="content__title">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Claritas est etiam processus dynamicus, qui sequitur.</p>
+                    <p class="content__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <span>sed diam nonummy nibh euismod</span> tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue.</p>
+                    <p class="content__paragraph">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
+                    <a href="#meet-team" class="content__button button">Meet Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-abilities">
+        <div class="our-abilities__container container">
+            <div class="our-abilities__item">
+                <p class="our-abilities__title title">Why Choose Us</p>
+                <p class="our-abilities__subtitle subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Claritas est etiam processus dynamicus, qui sequitur mutationem.</p>
+                <ul class="our-abilities__list">
+                    <li class="our-abilities__list-item"><img src="img/abouts/list-icon.png" alt=""> Dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li class="our-abilities__list-item"><img src="img/abouts/list-icon.png" alt=""> Claritas etiam processus dynamicus.</li>
+                    <li class="our-abilities__list-item"><img src="img/abouts/list-icon.png" alt=""> Mirum notare quam littera gothica quam.</li>
+                    <li class="our-abilities__list-item"><img src="img/abouts/list-icon.png" alt=""> Eodem modo typi.</li>
+                    <li class="our-abilities__list-item"><img src="img/abouts/list-icon.png" alt=""> Nam liber tempor cum soluta.</li>
+                </ul>
+            </div>
+            <div class="our-abilities__item">
+                <p class="our-abilities__title title">Why Choose Us</p>
+                <div class="accordion">
+                    <div class="trigger">
+                        <input type="checkbox" id="checkbox-1" name="checkbox-1" />
+                        <label for="checkbox-1" class="checkbox">
+                            Our Solution <i></i>
+                        </label>
+                        <div class="content">
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+                                Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
+                                litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo
+                                typi, qui nunc nobis videntur parum clari, fiant sollemnes in nam liber tempor cum
+                                soluta nobis eleifend option. </p>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+                                mazim placerat facer possim assum.</p>
+                        </div>
+                    </div>
+
+                    <div class="trigger">
+                        <input type="checkbox" id="checkbox-2" name="checkbox-2" />
+                        <label for="checkbox-2" class="checkbox">
+                            Our Solution <i></i>
+                        </label>
+                        <div class="content">
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+                                Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
+                                litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo
+                                typi, qui nunc nobis videntur parum clari, fiant sollemnes in nam liber tempor cum
+                                soluta nobis eleifend option. </p>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+                                mazim placerat facer possim assum.</p>
+                        </div>
+                    </div>
+
+                    <div class="trigger">
+                        <input type="checkbox" id="checkbox-3" name="checkbox-3" />
+                        <label for="checkbox-3" class="checkbox">
+                            Our Solution <i></i>
+                        </label>
+                        <div class="content">
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+                                Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
+                                litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo
+                                typi, qui nunc nobis videntur parum clari, fiant sollemnes in nam liber tempor cum
+                                soluta nobis eleifend option. </p>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+                                mazim placerat facer possim assum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-abilities__item">
+                <p class="our-abilities__title title">Why Choose Us</p>
+                <div class="capabilities">
+                    <p class="capabilities__capability">Photoshop</p>
+                    <div class="capabilities__progress">
+                        <div class="photoshop">
+                            <div class="capabilities__progress-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="20" viewBox="0 0 31 20"><g><g><path fill="#e5493a" d="M3 0h25a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H17.969c-.834 0-1.62 3.031-2.47 3.031-.827 0-1.717-3.032-2.53-3.032H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/><path fill="#e52e2f" d="M3 0h25a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H17.969c-.834 0-1.62 3.031-2.47 3.031-.827 0-1.717-3.032-2.53-3.032H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/></g></g></svg>
+                                <p class="capabilities__progress-percent">95%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="capabilities__capability">WordPress</p>
+                    <div class="capabilities__progress">
+                        <div class="wordpress">
+                            <div class="capabilities__progress-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="20" viewBox="0 0 31 20"><g><g><path fill="#e5493a" d="M3 0h25a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H17.969c-.834 0-1.62 3.031-2.47 3.031-.827 0-1.717-3.032-2.53-3.032H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/><path fill="#e52e2f" d="M3 0h25a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H17.969c-.834 0-1.62 3.031-2.47 3.031-.827 0-1.717-3.032-2.53-3.032H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/></g></g></svg>
+                                <p class="capabilities__progress-percent">95%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="capabilities__capability">eCommerce</p>
+                    <div class="capabilities__progress">
+                        <div class="ecommerce">
+                            <div class="capabilities__progress-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="20" viewBox="0 0 31 20"><g><g><path fill="#e5493a" d="M3 0h25a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H17.969c-.834 0-1.62 3.031-2.47 3.031-.827 0-1.717-3.032-2.53-3.032H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/><path fill="#e52e2f" d="M3 0h25a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H17.969c-.834 0-1.62 3.031-2.47 3.031-.827 0-1.717-3.032-2.53-3.032H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/></g></g></svg>
+                                <p class="capabilities__progress-percent">95%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="capabilities__capability">Photography</p>
+                    <div class="capabilities__progress">
+                        <div class="photography">
+                            <div class="capabilities__progress-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="20" viewBox="0 0 31 20"><g><g><path fill="#e5493a" d="M3 0h25a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H17.969c-.834 0-1.62 3.031-2.47 3.031-.827 0-1.717-3.032-2.53-3.032H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/><path fill="#e52e2f" d="M3 0h25a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H17.969c-.834 0-1.62 3.031-2.47 3.031-.827 0-1.717-3.032-2.53-3.032H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/></g></g></svg>
+                                <p class="capabilities__progress-percent">95%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="meet-team" class="meet-team">
+        <p class="title">Meet Our Team</p>
+        <p class="subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <div class="container meet-team__container">
+            <card class="member">
+                <div class="member__img-wrapper">
+                    <img class="member__img" src="img/team/member-photo1.png" alt="">
+                    <div class="member__img-bg">
+                        <div class="member__links">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__content">
+                    <p class="member__name">Jonathan Doe</p>
+                    <p class="member__role">Founder of Example.com</p>
+                </div>
+            </card>
+
+            <card class="member">
+                <div class="member__img-wrapper">
+                    <img class="member__img" src="img/team/member-photo1.png" alt="">
+                    <div class="member__img-bg">
+                        <div class="member__links">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__content">
+                    <p class="member__name">Jonathan Doe</p>
+                    <p class="member__role">Founder of Example.com</p>
+                </div>
+            </card>
+
+            <card class="member">
+                <div class="member__img-wrapper">
+                    <img class="member__img" src="img/team/member-photo1.png" alt="">
+                    <div class="member__img-bg">
+                        <div class="member__links">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__content">
+                    <p class="member__name">Jonathan Doe</p>
+                    <p class="member__role">Founder of Example.com</p>
+                </div>
+            </card>
+
+            <card class="member">
+                <div class="member__img-wrapper">
+                    <img class="member__img" src="img/team/member-photo1.png" alt="">
+                    <div class="member__img-bg">
+                        <div class="member__links">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__content">
+                    <p class="member__name">Jonathan Doe</p>
+                    <p class="member__role">Founder of Example.com</p>
+                </div>
+            </card>
+
+            <card class="member">
+                <div class="member__img-wrapper">
+                    <img class="member__img" src="img/team/member-photo1.png" alt="">
+                    <div class="member__img-bg">
+                        <div class="member__links">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__content">
+                    <p class="member__name">Jonathan Doe</p>
+                    <p class="member__role">Founder of Example.com</p>
+                </div>
+            </card>
+
+            <card class="member">
+                <div class="member__img-wrapper">
+                    <img class="member__img" src="img/team/member-photo1.png" alt="">
+                    <div class="member__img-bg">
+                        <div class="member__links">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__content">
+                    <p class="member__name">Jonathan Doe</p>
+                    <p class="member__role">Founder of Example.com</p>
+                </div>
+            </card>
+        </div>
+    </section>
+
+    <section class="abouts-rewiews">
+        <div class="container">
+            <p class="abouts-rewiews__title title">What People Say About Us</p>
+            <div class="abouts-rewiews__text-slider">
+                <p class="abouts-rewiews__text">“Lorem, ipsum dolor <span>sit amet consectetur</span> adipisicing elit. Eaque aliquam ducimus consectetur. <span>Optio rem neque</span> minima repellat. Doloribus, in excepturi?”</p>
+                <p class="abouts-rewiews__text">“Lorem <span>ipsum dolor sit</span> amet consectetur adipisicing elit. <span>Temporibus</span> exercitationem error possimus. Tempore accusamus facere necessitatibus laudantium laborum ratione et.”</p>
+                <p class="abouts-rewiews__text">“Lorem ipsum dolor sit amet consectetur <span>adipisicing</span> elit. Natus voluptatibus molestias libero illo eius fuga cumque maxime voluptatem corporis exercitationem.”</p>
+                <p class="abouts-rewiews__text">“<span>Lorem ipsum</span> dolor sit, amet consectetur adipisicing elit. Deleniti dolores laborum optio necessitatibus incidunt itaque modi soluta quis earum ea.”</p>
+            </div>
+            <div class="abouts-rewiews__author-slider">
+                <div class="abouts-rewiews__author">
+                    <img src="img/abouts-rewiews/photo1.png" alt="" class="abouts-rewiews__author-img">
+                    <p class="abouts-rewiews__author-name">Jonathan Smith</p>
+                    <p class="abouts-rewiews__author-role">Company Inc.</p>
+                </div>
+                <div class="abouts-rewiews__author">
+                    <img src="img/abouts-rewiews/photo1.png" alt="" class="abouts-rewiews__author-img">
+                    <p class="abouts-rewiews__author-name">Jonathan Smith</p>
+                    <p class="abouts-rewiews__author-role">Company Inc.</p>
+                </div>
+                <div class="abouts-rewiews__author">
+                    <img src="img/abouts-rewiews/photo1.png" alt="" class="abouts-rewiews__author-img">
+                    <p class="abouts-rewiews__author-name">Jonathan Smith</p>
+                    <p class="abouts-rewiews__author-role">Company Inc.</p>
+                </div>
+                <div class="abouts-rewiews__author">
+                    <img src="img/abouts-rewiews/photo1.png" alt="" class="abouts-rewiews__author-img">
+                    <p class="abouts-rewiews__author-name">Jonathan Smith</p>
+                    <p class="abouts-rewiews__author-role">Company Inc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients clients_mono">
+        <p class="title">Our Happy Clients</p>
+        <p class="subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <div class="clients__container container">
+            <img src="img/clients/black01.png" alt="">
+            <img src="img/clients/black02.png" alt="">
+            <img src="img/clients/black03.png" alt="">
+            <img src="img/clients/black04.png" alt="">
+            <img src="img/clients/black05.png" alt="">
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer__container container">
+
+                <!-- column 1 -->
+        <div class="column">
+            <div class="footer__logo-wrapper">
+                <p class="footer__logo">èxe</p>
+                <p class="footer__logo-description">Clean and Universal
+                    PSD Template</p>
+            </div>
+            <p class="footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat claritas est etiam processus dynamicus.</p>
+            <a href="#" class="footer__text-link">Read More »</a>
+            <h3 class="footer__newsletters-title">Email Newsletters:</h3>
+            <form action="#" method="POST" class="footer__newsletters-form">
+                <input class="footer__newsletters" type="text" name="Newsletters" placeholder="Email Address">
+                <button type="submit" class="footer__newsletters-button" ><svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12"><g><g><path d="M.793.067c.133-.05.276-.083.428-.083h14.558c.151 0 .294.032.428.083L9.684 6.442c-.664.65-1.704.65-2.369 0zm10.022 6.676L16.92.778c.06.15.094.314.094.486v9.47c0 .243-.07.468-.182.661zm5.447 5.17a1.193 1.193 0 0 1-.483.102H1.221c-.172 0-.335-.037-.483-.102l5.998-4.639c.507.45 1.134.679 1.764.679.63 0 1.257-.229 1.763-.679zM6.184 6.743L.17 11.395a1.307 1.307 0 0 1-.182-.66V1.264c0-.172.034-.336.093-.486z"/><path fill="#363636" d="M.793.067c.133-.05.276-.083.428-.083h14.558c.151 0 .294.032.428.083L9.684 6.442c-.664.65-1.704.65-2.369 0zm10.022 6.676L16.92.778c.06.15.094.314.094.486v9.47c0 .243-.07.468-.182.661zm5.447 5.17a1.193 1.193 0 0 1-.483.102H1.221c-.172 0-.335-.037-.483-.102l5.998-4.639c.507.45 1.134.679 1.764.679.63 0 1.257-.229 1.763-.679zM6.184 6.743L.17 11.395a1.307 1.307 0 0 1-.182-.66V1.264c0-.172.034-.336.093-.486z"/></g></g></svg></button>
+            </form>
+        </div>
+
+                <!-- column 2 -->
+        <div class="column">
+            <p class="column__title">Latest News</p>
+            <div class="item">
+                <div class="item__photo-wrapper">
+                    <img class="item__photo" src="img/footer/photo1.png" alt="">
+                    <div class="item__photo-bg">
+                        <figure>
+                            <a href="#"><img class="item__photo-icon" src="img/footer/icon.png" alt=""></a>
+                        </figure>
+                    </div>
+                </div>
+                <div class="item__content">
+                    <a href="#">
+                        <p class="item__description">Corem ipsum dolor sit amet, consectetuer adipiscing...Corem ipsum dolor sit amet, consectetuer adipiscing...Corem ipsum dolor sit amet, consectetuer adipiscing...</p>
+                    </a>
+                    <p class="item__date">04 February 2015</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item__photo-wrapper">
+                    <img class="item__photo" src="img/footer/photo1.png" alt="">
+                    <div class="item__photo-bg">
+                        <figure>
+                            <a href="#"><img class="item__photo-icon" src="img/footer/icon.png" alt=""></a>
+                        </figure>
+                    </div>
+                </div>
+                <div class="item__content">
+                    <a href="#">
+                        <p class="item__description">Corem ipsum dolor sit amet, consectetuer adipiscing...</p>
+                    </a>
+                    <p class="item__date">04 February 2015</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item__photo-wrapper">
+                    <img class="item__photo" src="img/footer/photo1.png" alt="">
+                    <div class="item__photo-bg">
+                        <figure>
+                            <a href="#"><img class="item__photo-icon" src="img/footer/icon.png" alt=""></a>
+                        </figure>
+                    </div>
+                </div>
+                <div class="item__content">
+                    <a href="#">
+                        <p class="item__description">Corem ipsum dolor sit amet, consectetuer adipiscing...</p>
+                    </a>
+                    <p class="item__date">04 February 2015</p>
+                </div>
+            </div>            
+        </div>
+
+                <!-- column 3 -->
+        <div class="column">
+            <p class="column__title">Twitter Widget</p>
+            <div class="item">
+                <div class="item__photo-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><g><g><path d="M19.006 9.515c0 5.259-4.256 9.522-9.506 9.522S-.006 14.774-.006 9.515 4.249-.007 9.5-.007c5.25 0 9.506 4.263 9.506 9.522zM14.3 6.823c-.335.149-.696.25-1.075.295.386-.231.683-.6.823-1.037a3.74 3.74 0 0 1-1.19.455 1.873 1.873 0 0 0-3.19 1.71 5.313 5.313 0 0 1-3.858-1.96 1.877 1.877 0 0 0 .58 2.504 1.869 1.869 0 0 1-.849-.234v.024c0 .909.645 1.666 1.502 1.838a1.858 1.858 0 0 1-.846.033c.239.745.93 1.287 1.75 1.302a3.753 3.753 0 0 1-2.772.777 5.29 5.29 0 0 0 2.87.843c3.443 0 5.326-2.859 5.326-5.337a5.19 5.19 0 0 0-.005-.243 3.8 3.8 0 0 0 .934-.97z"/><path fill="#464646" d="M19.006 9.515c0 5.259-4.256 9.522-9.506 9.522S-.006 14.774-.006 9.515 4.249-.007 9.5-.007c5.25 0 9.506 4.263 9.506 9.522zM14.3 6.823c-.335.149-.696.25-1.075.295.386-.231.683-.6.823-1.037a3.74 3.74 0 0 1-1.19.455 1.873 1.873 0 0 0-3.19 1.71 5.313 5.313 0 0 1-3.858-1.96 1.877 1.877 0 0 0 .58 2.504 1.869 1.869 0 0 1-.849-.234v.024c0 .909.645 1.666 1.502 1.838a1.858 1.858 0 0 1-.846.033c.239.745.93 1.287 1.75 1.302a3.753 3.753 0 0 1-2.772.777 5.29 5.29 0 0 0 2.87.843c3.443 0 5.326-2.859 5.326-5.337a5.19 5.19 0 0 0-.005-.243 3.8 3.8 0 0 0 .934-.97z"/></g></g></svg>
+                </div>
+                <div class="item__content">
+                    <a href="#">
+                        <p class="item__description">Raritas est etiam processus dynamicus, qui sequitur mutationem <a class="item__description-highlight" href="#">http://t.co/hVtABj5tZo</a></p>
+                    </a>
+                    <p class="item__date">04 February 2015</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item__photo-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><g><g><path d="M19.006 9.515c0 5.259-4.256 9.522-9.506 9.522S-.006 14.774-.006 9.515 4.249-.007 9.5-.007c5.25 0 9.506 4.263 9.506 9.522zM14.3 6.823c-.335.149-.696.25-1.075.295.386-.231.683-.6.823-1.037a3.74 3.74 0 0 1-1.19.455 1.873 1.873 0 0 0-3.19 1.71 5.313 5.313 0 0 1-3.858-1.96 1.877 1.877 0 0 0 .58 2.504 1.869 1.869 0 0 1-.849-.234v.024c0 .909.645 1.666 1.502 1.838a1.858 1.858 0 0 1-.846.033c.239.745.93 1.287 1.75 1.302a3.753 3.753 0 0 1-2.772.777 5.29 5.29 0 0 0 2.87.843c3.443 0 5.326-2.859 5.326-5.337a5.19 5.19 0 0 0-.005-.243 3.8 3.8 0 0 0 .934-.97z"/><path fill="#464646" d="M19.006 9.515c0 5.259-4.256 9.522-9.506 9.522S-.006 14.774-.006 9.515 4.249-.007 9.5-.007c5.25 0 9.506 4.263 9.506 9.522zM14.3 6.823c-.335.149-.696.25-1.075.295.386-.231.683-.6.823-1.037a3.74 3.74 0 0 1-1.19.455 1.873 1.873 0 0 0-3.19 1.71 5.313 5.313 0 0 1-3.858-1.96 1.877 1.877 0 0 0 .58 2.504 1.869 1.869 0 0 1-.849-.234v.024c0 .909.645 1.666 1.502 1.838a1.858 1.858 0 0 1-.846.033c.239.745.93 1.287 1.75 1.302a3.753 3.753 0 0 1-2.772.777 5.29 5.29 0 0 0 2.87.843c3.443 0 5.326-2.859 5.326-5.337a5.19 5.19 0 0 0-.005-.243 3.8 3.8 0 0 0 .934-.97z"/></g></g></svg>
+                </div>
+                <div class="item__content">
+                    <a href="#">
+                        <p class="item__description">Raritas est etiam processus dynamicus, qui sequitur mutationem <a class="item__description-highlight" href="#">http://t.co/hVtABj5tZo</a></p>
+                    </a>
+                    <p class="item__date">04 February 2015</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item__photo-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><g><g><path d="M19.006 9.515c0 5.259-4.256 9.522-9.506 9.522S-.006 14.774-.006 9.515 4.249-.007 9.5-.007c5.25 0 9.506 4.263 9.506 9.522zM14.3 6.823c-.335.149-.696.25-1.075.295.386-.231.683-.6.823-1.037a3.74 3.74 0 0 1-1.19.455 1.873 1.873 0 0 0-3.19 1.71 5.313 5.313 0 0 1-3.858-1.96 1.877 1.877 0 0 0 .58 2.504 1.869 1.869 0 0 1-.849-.234v.024c0 .909.645 1.666 1.502 1.838a1.858 1.858 0 0 1-.846.033c.239.745.93 1.287 1.75 1.302a3.753 3.753 0 0 1-2.772.777 5.29 5.29 0 0 0 2.87.843c3.443 0 5.326-2.859 5.326-5.337a5.19 5.19 0 0 0-.005-.243 3.8 3.8 0 0 0 .934-.97z"/><path fill="#464646" d="M19.006 9.515c0 5.259-4.256 9.522-9.506 9.522S-.006 14.774-.006 9.515 4.249-.007 9.5-.007c5.25 0 9.506 4.263 9.506 9.522zM14.3 6.823c-.335.149-.696.25-1.075.295.386-.231.683-.6.823-1.037a3.74 3.74 0 0 1-1.19.455 1.873 1.873 0 0 0-3.19 1.71 5.313 5.313 0 0 1-3.858-1.96 1.877 1.877 0 0 0 .58 2.504 1.869 1.869 0 0 1-.849-.234v.024c0 .909.645 1.666 1.502 1.838a1.858 1.858 0 0 1-.846.033c.239.745.93 1.287 1.75 1.302a3.753 3.753 0 0 1-2.772.777 5.29 5.29 0 0 0 2.87.843c3.443 0 5.326-2.859 5.326-5.337a5.19 5.19 0 0 0-.005-.243 3.8 3.8 0 0 0 .934-.97z"/></g></g></svg>
+                </div>
+                <div class="item__content">
+                    <a href="#">
+                        <p class="item__description">Raritas est etiam processus dynamicus, qui sequitur mutationem <a class="item__description-highlight" href="#">http://t.co/hVtABj5tZo</a></p>
+                    </a>
+                    <p class="item__date">04 February 2015</p>
+                </div>
+            </div>            
+        </div>
+
+                <!-- column 4 -->
+        <div class="column">
+            <p class="column__title">Get In Touch</p>
+                <div class="item">
+                    <div class="item__photo-wrapper">
+                        <h3 class="item__title">Address:</h3>
+                    </div>
+                    <div class="item__content">
+                        <a href="#">
+                            <p class="item__description">795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item__photo-wrapper">
+                        <h3 class="item__title">Phone:</h3>
+                    </div>
+                    <div class="item__content">
+                        <a href="tel:+440 875369208"  class="item__description">+440 875369208 - Office</a>
+                        <a href="tel:+440 353363114"  class="item__description">+440 353363114 - Fax</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item__photo-wrapper">
+                        <h3 class="item__title">Email:</h3>
+                    </div>
+                    <div class="item__content">
+                        <a href=“mailto:support@sitename.com”  class="item__description">support@sitename.com</a>
+                        <a href=“mailto:info@sitename.com”  class="item__description">info@sitename.com</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item__photo-wrapper">
+                        <h3 class="item__title">Follow Us:</h3>
+                    </div>
+                    <div class="item__content item__content_icons">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/><path fill="#464646" d="M16 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3A3 3 0 0 1 3-.002h10a3 3 0 0 1 3 3zm-5.757 3.344H8.755l.002-.828c0-.431.03-.662.65-.662h.827V3.2H8.91c-1.59 0-1.955.82-1.955 2.17l.002.974-1.2.001V8h1.2v4.8h1.799V8h1.312z"/></g></g></svg></a>
+                    </div>
+                </div>               
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container footer__bottom-container">
+            <p class="footer__copyright">© 2015 èxe, Design by <a href="#">ThemeFire</a>   /   Only for <a href="#">Envato Market</a></p>
+            <ul class="footer__nav">
+                <li class="footer__menu-item"><a href="index.html">Home</a></li>
+                <li class="footer__menu-item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="footer__menu-item"><a href="blog.html">Blog</a></li>
+                <li class="footer__menu-item"><a href="abouts.html">About us</a></li>
+                <li class="footer__menu-item"><a href="contacts.html">Contacts</a></li>
+                <li class="footer__menu-item"><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+@media (max-width: 1000px) {
+    .footer {
+        .column {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .portfolio {
+        .item {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 14%;
+        }
+    }
+
+    .blog {
+        &__col {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    .blog-post {
+        &__youtube-video {
+            height: 25vh;
+        }
+    }
+
+    .contactscards {
+        padding-bottom: 100px;
+
+        &__card {
+            flex: 0 0 46%;
+            max-width: 46%;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .services {
+        &__card {
+            flex: 0 0 44%;
+            max-width: 44%;
+            margin-bottom: 60px;
+        }
+    }
+
+    .aboutus {
+        &__card {
+            flex: 0 0 44%;
+            max-width: 44%;
+            margin-bottom: 60px;
+        }
+    }
+
+    .theme {
+        &__img {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-left: 0px;
+        }
+
+        &__content {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
+
+    .chooseus {
+        .accordion {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .reviews-slider {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-left: 0px;
+        }
+    }
+
+    .project{
+        &__col{
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+    // MENU
+    .header{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__menu{
+            flex-direction: column;
+            display: none;
+        }
+
+        &__menu-item{
+            margin: 10px 0;
+        }
+
+        &__burger{
+            display: block;
+        }
+    }
+
+    // !!! Убрать
+    .header-top{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        .column {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .agency {
+        .content {
+            &__item {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .our-abilities {
+        &__item {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .meet-team {
+        .member {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    .contactsform {
+        form {
+            input {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .blog {
+        &__col {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .services {
+        &__card {
+            flex: 0 0 90%;
+            max-width: 90%;
+            margin-bottom: 0;
+        }
+
+        &__card+&__card {
+            margin-top: 60px;
+        }
+    }
+
+    .aboutus {
+
+        &__card {
+            flex: 0 0 90%;
+            max-width: 90%;
+            margin-bottom: 0;
+        }
+
+        &__card+&__card {
+            margin-top: 60px;
+        }
+    }
+
+    .blog-post_colapsed {
+        // flex-direction: column;
+    }
+
+    .portfolio {
+        .item {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 28%;
+        }
+    }
+
+    .meet-team {
+        .member {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .contactscards {
+
+        // padding-bottom: 100px;
+        &__card {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .theme {
+        .card__description {
+            max-width: 170px;
+        }
+    }
+
+    .main-slider {
+        &__battons-list {
+            flex-direction: column;
+        }
+
+        &__batton {
+            margin: 7px 0;
+        }
+    }
+
+    .project{
+        &__slider-little{
+            img{
+                height: 7vh;
+            }
+        }
+    }
+}
