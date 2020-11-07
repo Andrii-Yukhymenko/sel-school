@@ -1013,37 +1013,6 @@ h6 {
   }
 }
 
-.main-slider__battons-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.main-slider__batton {
-  border: 2px solid #ffffff;
-  background-color: #e5493a;
-  border-radius: 6%;
-  padding: 20px 30px;
-  color: #ffffff;
-  font-family: "Raleway - Extra Bold";
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 0px 15px;
-}
-
-.main-slider__batton:hover {
-  border: none;
-  background-color: #363636;
-  border: 2px solid #363636;
-}
-
 .services {
   background-color: #fafafa;
 }
@@ -1708,6 +1677,9 @@ h6 {
   display: flex;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .theme__img {
@@ -1733,9 +1705,6 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .theme .card {

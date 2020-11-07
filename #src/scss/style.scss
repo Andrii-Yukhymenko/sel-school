@@ -3,6 +3,7 @@
 @import '_slick';
 
 $red: #e5493a;
+// $red: #3aafe5;
 $maxWidth: 1200;
 
 @mixin adaptiv-font($pcSize, $mobSize) {
@@ -682,32 +683,6 @@ $maxWidth: 1200;
         margin-bottom: 40px;
         max-width: 70vw;
     }
-
-    &__battons-list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    &__batton {
-        border: 2px solid #ffffff;
-        background-color: $red;
-        border-radius: 6%;
-        padding: 20px 30px;
-        color: #ffffff;
-        font-family: "Raleway - Extra Bold";
-        font-size: 14px;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin: 0px 15px;
-
-        &:hover {
-            border: none;
-            background-color: #363636;
-            border: 2px solid #363636;
-        }
-    }
-
 }
 
 .services {
@@ -1307,6 +1282,7 @@ $maxWidth: 1200;
     &__container {
         display: flex;
         flex-wrap: wrap-reverse;
+        align-items: center;
     }
 
     &__img {
@@ -1321,7 +1297,6 @@ $maxWidth: 1200;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
 
