@@ -8,7 +8,8 @@ $maxWidth: 1200;
 
 @mixin adaptiv-font($pcSize, $mobSize) {
     font-size: #{$pcSize + px};
-    @media (max-width: #{$maxWidth + px}){
+
+    @media (max-width: #{$maxWidth + px}) {
         $addSize: $pcSize - $mobSize;
         $maxWidth: $maxWidth - 320;
         font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
@@ -194,6 +195,36 @@ $maxWidth: 1200;
         display: flex;
     }
 
+    &__menu-sub {
+        display: none;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        z-index: 10;
+        border-left: 3px solid $red;
+        border-right: 3px solid $red;
+    }
+
+    &__menu-sub-item {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 0 10px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 0%;
+            height: 3px;
+            background: $red;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+                transition: ease .4s;
+            }
+        }
+    }
+
     &__burger {
         margin-left: 25px;
         position: relative;
@@ -267,6 +298,10 @@ $maxWidth: 1200;
             &::before {
                 width: 100%;
                 transition: ease .4s;
+            }
+
+            .header__menu-sub {
+                display: block;
             }
         }
     }
@@ -624,6 +659,26 @@ $maxWidth: 1200;
     }
 }
 
+.menu-item-has-children {
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        padding: 20px;
+        background-image: url(../img/sub-menu-triangle.png);
+        background-position: center;
+        background-size: 13px 13px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 55%;
+        right: -32px;
+        width: 30px;
+        height: 30px;
+        transform: translate(-0%, -50%);
+        cursor: pointer;
+    }
+}
 
 
 
@@ -2303,6 +2358,8 @@ $maxWidth: 1200;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                max-width: 37px;
+                max-height: 37px;
             }
         }
 

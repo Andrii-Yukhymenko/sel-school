@@ -424,6 +424,36 @@ h6 {
   display: flex;
 }
 
+.header__menu-sub {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 10;
+  border-left: 3px solid #e5493a;
+  border-right: 3px solid #e5493a;
+}
+
+.header__menu-sub-item {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.header__menu-sub-item::before {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: #e5493a;
+}
+
+.header__menu-sub-item:hover::before {
+  width: 100%;
+  -webkit-transition: ease .4s;
+  -o-transition: ease .4s;
+  transition: ease .4s;
+}
+
 .header__burger {
   margin-left: 25px;
   position: relative;
@@ -500,6 +530,10 @@ h6 {
   -webkit-transition: ease .4s;
   -o-transition: ease .4s;
   transition: ease .4s;
+}
+
+.header__menu-item:hover .header__menu-sub {
+  display: block;
 }
 
 .header__menu-item_selected {
@@ -932,6 +966,29 @@ h6 {
 
 .footer__menu-item + .footer__menu-item {
   margin-left: 20px;
+}
+
+.menu-item-has-children {
+  position: relative;
+}
+
+.menu-item-has-children::after {
+  content: '';
+  display: block;
+  padding: 20px;
+  background-image: url(../img/sub-menu-triangle.png);
+  background-position: center;
+  background-size: 13px 13px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 55%;
+  right: -32px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  cursor: pointer;
 }
 
 .main-slider {
@@ -2779,6 +2836,8 @@ h6 {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  max-width: 37px;
+  max-height: 37px;
 }
 
 .contactscards__card:hover .contactscards__card-title {

@@ -32,7 +32,7 @@ $(document).ready(function(){
         autoplaySpeed: 3000,
       });
 
-      $('.reviews-slider-portfolio').slick({
+    $('.reviews-slider-portfolio').slick({
         dots: true,
         slidesToShow: 2,
         arrows: false,
@@ -49,7 +49,7 @@ $(document).ready(function(){
         ]
       });
 
-      $('.blog-post__slider').slick({
+    $('.blog-post__slider').slick({
         dots: true,
         slidesToShow: 1,
         arrows: false,
@@ -58,7 +58,7 @@ $(document).ready(function(){
         autoplaySpeed: 3000,
       });
 
-      $('.latestposts__slider').slick({
+    $('.latestposts__slider').slick({
         dots: true,
         slidesToShow: 2,
         arrows: false,
@@ -76,7 +76,7 @@ $(document).ready(function(){
         ]
       });
 
-      $('.abouts-rewiews__text-slider').slick({
+    $('.abouts-rewiews__text-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -84,7 +84,7 @@ $(document).ready(function(){
         asNavFor: '.abouts-rewiews__author-slider'
       });
 
-      $('.abouts-rewiews__author-slider').slick({
+    $('.abouts-rewiews__author-slider').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
@@ -96,7 +96,7 @@ $(document).ready(function(){
           nextArrow: '<button type="button" class="slick-arrow slick-next"><div></div></button>',
         });
 
-      $('.project__slider-little').slick({
+    $('.project__slider-little').slick({
         slidesToShow: 6,
         infinite: true,
         centerMode: true,
@@ -106,7 +106,7 @@ $(document).ready(function(){
         asNavFor: '.project__slider-big'
       });
   
-      $('.project__slider-big').slick({
+    $('.project__slider-big').slick({
           prevArrow: '<button type="button" class="slick-arrow slick-prev"><div></div></button>',
           nextArrow: '<button type="button" class="slick-arrow slick-next"><div></div></button>',
           slidesToShow: 1,
@@ -114,7 +114,6 @@ $(document).ready(function(){
           asNavFor: '.project__slider-little',
           infinite: true,
         });
-
 
     $('.loadmore-button_hide').addClass('disable');
 
@@ -124,7 +123,7 @@ $(document).ready(function(){
         $('.loadmore-button_hide').toggleClass('disable');
     });
     
-let headerheight = $("header").height();
+    let headerheight = $("header").height();
 
     $(window).scroll(function(){
 
@@ -155,16 +154,6 @@ let headerheight = $("header").height();
 
     console.log("headerheight" + " = " + headerheight + "px");
 
-    let pagePathName = location.pathname.split('/').slice(-1)[0];
-
-    if(pagePathName == ""){
-        pagePathName = 'index.html'
-    };
-
-    console.log('pagePathName = '+ pagePathName);
-
-    $(`.header__menu-item a[href="${ pagePathName }"]`).addClass('header__menu-item_selected');
-    $(`.footer__menu-item a[href="${ pagePathName }"]`).addClass('header__menu-item_selected');
 
 
 
