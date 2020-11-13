@@ -1,11 +1,11 @@
 @media (max-width: 1000px) {
-    .footer {
-        .column {
-            flex: 0 0 50%;
-            max-width: 50%;
-            margin-bottom: 30px;
-        }
-    }
+    // .footer {
+    //     .column {
+    //         flex: 0 0 50%;
+    //         max-width: 50%;
+    //         margin-bottom: 30px;
+    //     }
+    // }
 
     .portfolio {
         .item {
@@ -40,6 +40,13 @@
 }
 
 @media (max-width: 950px) {
+    .footer {
+        .column {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+    }
     .services {
         &__card {
             flex: 0 0 44%;
@@ -114,20 +121,12 @@
     }
 
     // !!! Убрать
-    .header-top{
+    .header__top{
         display: none;
     }
 }
 
 @media (max-width: 768px) {
-    .footer {
-        .column {
-            flex: 0 0 100%;
-            max-width: 100%;
-            margin-bottom: 30px;
-        }
-    }
-
     .agency {
         .content {
             &__item {

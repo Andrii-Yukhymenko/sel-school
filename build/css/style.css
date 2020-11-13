@@ -389,7 +389,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .header__logo-wrapper {
@@ -425,18 +425,18 @@ h6 {
 }
 
 .header__menu-sub {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   background-color: white;
   z-index: 10;
-  border-left: 3px solid #e5493a;
-  border-right: 3px solid #e5493a;
+  border-bottom: 4px solid #e5493a;
 }
 
 .header__menu-sub-item {
   font-size: 12px;
   font-weight: 600;
-  padding: 0 10px;
+  padding: 10px 20px 10px 20px;
 }
 
 .header__menu-sub-item::before {
@@ -533,7 +533,11 @@ h6 {
 }
 
 .header__menu-item:hover .header__menu-sub {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: ease .6s;
+  -o-transition: ease .6s;
+  transition: ease .6s;
 }
 
 .header__menu-item_selected {
@@ -755,9 +759,9 @@ h6 {
 
 .footer .column {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
-  max-width: 25%;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  max-width: 33.33%;
   padding: 0px 15px 0px 15px;
 }
 
@@ -790,6 +794,7 @@ h6 {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
+  margin-right: 30px;
 }
 
 .footer .item__photo-wrapper {
@@ -831,8 +836,8 @@ h6 {
 }
 
 .footer .item__photo {
-  max-width: 70px;
-  max-height: 70px;
+  width: 70px;
+  height: 70px;
   z-index: 1;
 }
 
@@ -906,6 +911,15 @@ h6 {
 
 .footer .item:hover .item__photo-wrapper svg path {
   fill: #e5493a;
+}
+
+.footer .item_contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer .item + .item {
@@ -2992,13 +3006,6 @@ h6 {
 }
 
 @media (max-width: 1000px) {
-  .footer .column {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    max-width: 50%;
-    margin-bottom: 30px;
-  }
   .portfolio .item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -3028,6 +3035,13 @@ h6 {
 }
 
 @media (max-width: 950px) {
+  .footer .column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
   .services__card {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 44%;
@@ -3097,19 +3111,12 @@ h6 {
   .header__burger {
     display: block;
   }
-  .header-top {
+  .header__top {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
-  .footer .column {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
   .agency .content__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
