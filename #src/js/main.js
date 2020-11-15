@@ -131,6 +131,7 @@ $(document).ready(function(){
 
         if(scroll > headerheight) {
             $('.scrolline').addClass('sticky');
+            $('.marquee').addClass('sticky');
 
             var o = $(window).scrollTop() / ($(document).height() - $(window).height());
             $(".scrolline__inline").animate({
@@ -143,6 +144,7 @@ $(document).ready(function(){
 
         else{
             $('.scrolline').removeClass('sticky');
+            $('.marquee').removeClass('sticky');
             // $(".scrolline").css({
             //     width: (100) + "%"
             // });

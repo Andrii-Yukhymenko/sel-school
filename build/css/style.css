@@ -431,6 +431,8 @@ h6 {
   background-color: white;
   z-index: 10;
   border-bottom: 4px solid #e5493a;
+  top: 100%;
+  left: -33%;
 }
 
 .header__menu-sub-item {
@@ -920,6 +922,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: right;
 }
 
 .footer .item + .item {
@@ -1003,6 +1006,54 @@ h6 {
       -ms-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
   cursor: pointer;
+}
+
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #e5493a;
+  padding: 0px 0px 6px 0px;
+}
+
+.marquee span {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: 500;
+  display: inline-block;
+  padding-left: 100%;
+  -webkit-animation: marquee 25s infinite linear;
+  animation: marquee 25s infinite linear;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+}
+
+.marquee.sticky {
+  position: fixed;
+  top: 12px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  padding: 6px 0;
 }
 
 .main-slider {
@@ -1152,6 +1203,8 @@ h6 {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  max-width: 37px;
+  max-height: 37px;
 }
 
 .services__card-title {
@@ -1431,6 +1484,11 @@ h6 {
   margin-bottom: 35px;
 }
 
+.aboutus__card-img img {
+  max-width: 130px;
+  max-height: 130px;
+}
+
 .aboutus__card-numb {
   position: absolute;
   top: 50%;
@@ -1619,6 +1677,7 @@ h6 {
 
 .chooseus .accordion .trigger .content p {
   margin: 30px 30px;
+  overflow-wrap: anywhere;
 }
 
 .chooseus .accordion #checkbox-1:checked ~ .content,
@@ -1759,6 +1818,8 @@ h6 {
           flex: 0 0 55%;
   max-width: 55%;
   padding-left: 10px;
+  margin-bottom: 25px;
+  padding-right: 30px;
 }
 
 .theme__content {
@@ -1788,7 +1849,7 @@ h6 {
   margin-bottom: 20px;
 }
 
-.theme .card__img {
+.theme .card__figure {
   margin-right: 30px;
   width: 100px;
   height: 100px;
@@ -1797,13 +1858,15 @@ h6 {
   background-color: #fafafa;
 }
 
-.theme .card__img svg {
+.theme .card__img {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  max-width: 40px;
+  max-height: 40px;
 }
 
 .theme .card__title {
@@ -1822,13 +1885,9 @@ h6 {
   max-width: 320px;
 }
 
-.theme .card:hover .card__img {
+.theme .card:hover .card__figure {
   background-color: rgba(255, 255, 255, 0);
   border: 3px solid #e5493a;
-}
-
-.theme .card:hover .card__img svg path {
-  fill: #e5493a;
 }
 
 .theme .card:hover .card__title {
@@ -1844,7 +1903,7 @@ h6 {
 }
 
 .clients__container {
-  padding: 55px 50px;
+  padding: 30px 30px;
 }
 
 .clients__container .slick-arrow:hover {
@@ -1853,6 +1912,8 @@ h6 {
 
 .clients img {
   padding: 0px 15px 0px 15px;
+  max-height: 150px;
+  width: auto;
 }
 
 .clients_mono {
@@ -3062,6 +3123,7 @@ h6 {
             flex: 0 0 100%;
     max-width: 100%;
     padding-left: 0px;
+    padding-right: 0px;
   }
   .theme__content {
     -webkit-box-flex: 0;
