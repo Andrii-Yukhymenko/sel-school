@@ -115,13 +115,6 @@ $(document).ready(function(){
           infinite: true,
         });
 
-    $('.loadmore-button_hide').addClass('disable');
-
-    $('.loadmore-button').click(function(event) {
-        $('.portfolio__desk_hiden').toggleClass('visible'),
-        $('.loadmore-button_load').toggleClass('disable'),
-        $('.loadmore-button_hide').toggleClass('disable');
-    });
     
     let headerheight = $("header").height();
 

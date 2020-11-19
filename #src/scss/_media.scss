@@ -1,23 +1,7 @@
 @media (max-width: 1000px) {
-    // .footer {
-    //     .column {
-    //         flex: 0 0 50%;
-    //         max-width: 50%;
-    //         margin-bottom: 30px;
-    //     }
-    // }
-
-    .blog {
-        &__col {
-            flex: 0 0 50%;
-            max-width: 50%;
-        }
-    }
-
     .blog-post {
-        &__youtube-video {
-            height: 25vh;
-        }
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     .contactscards {
@@ -39,6 +23,7 @@
             margin-bottom: 30px;
         }
     }
+
     .services {
         &__card {
             flex: 0 0 44%;
@@ -85,8 +70,8 @@
         }
     }
 
-    .project{
-        &__col{
+    .project {
+        &__col {
             flex: 0 0 100%;
             max-width: 100%;
             margin-bottom: 40px;
@@ -94,27 +79,27 @@
     }
 
     // MENU
-    .header{
-        &__wrapper{
+    .header {
+        &__wrapper {
             flex-direction: column;
         }
 
-        &__menu{
+        &__menu {
             flex-direction: column;
             display: none;
         }
 
-        &__menu-item{
+        &__menu-item {
             margin: 10px 0;
         }
 
-        &__burger{
+        &__burger {
             display: block;
         }
     }
 
     // !!! Убрать
-    .header__top{
+    .header__top {
         display: none;
     }
 }
@@ -130,13 +115,6 @@
         }
     }
 
-    .our-abilities {
-        &__item {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-    }
-
     .meet-team {
         .member {
             flex: 0 0 50%;
@@ -146,11 +124,9 @@
 }
 
 @media (max-width: 670px) {
-    .blog {
-        &__col {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
+    .blog-post {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
@@ -178,10 +154,6 @@
         &__card+&__card {
             margin-top: 60px;
         }
-    }
-
-    .blog-post_colapsed {
-        // flex-direction: column;
     }
 
     .meet-team {
@@ -219,9 +191,9 @@
         }
     }
 
-    .project{
-        &__slider-little{
-            img{
+    .project {
+        &__slider-little {
+            img {
                 height: 7vh;
             }
         }

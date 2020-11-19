@@ -28,7 +28,7 @@ $maxWidth: 1200;
     color: #363636;
     font-family: Raleway;
     // font-size: 30px;
-    @include adaptiv-font(30, 20);
+    @include adaptiv-font(30, 25);
     font-weight: 700;
     font-style: normal;
     letter-spacing: normal;
@@ -169,7 +169,7 @@ $maxWidth: 1200;
         // flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 0;
+        padding: 12px 0;
     }
 
     &__logo-wrapper {
@@ -178,11 +178,8 @@ $maxWidth: 1200;
     }
 
     &__logo {
-        color: #363636;
-        font-family: Axis;
-        font-size: 56px;
-        font-weight: 400;
-        line-height: 45px;
+        width: 75px;
+        height: 75px;
     }
 
     &__menu {
@@ -368,12 +365,9 @@ $maxWidth: 1200;
     }
 
     &__logo {
-        color: #464646;
-        font-family: Axis;
-        font-size: 56px;
-        font-weight: 400;
+        width: 60px;
+        height: 60px;
         margin-right: 15px;
-        line-height: 41px;
     }
 
     &__logo-description {
@@ -393,15 +387,6 @@ $maxWidth: 1200;
         line-height: 20px;
         margin-bottom: 20px;
         overflow-wrap: break-word;
-    }
-
-    &__text-link {
-        color: $red;
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: normal;
-        line-height: 20px;
     }
 
     &__container {
@@ -874,8 +859,8 @@ $maxWidth: 1200;
 .info-dot {
     position: absolute;
     transform: translate(-50%, -50%);
-    bottom: 0;
-    right: 0;
+    left: 50%;
+    top: 50%;
 
     figure {
         width: 42px;
@@ -897,10 +882,6 @@ $maxWidth: 1200;
             background-color: $red;
         }
     }
-}
-
-.info-dot__zoom {
-    right: 50px;
 }
 
 .info-dot__link {}
@@ -1131,6 +1112,7 @@ $maxWidth: 1200;
             max-height: 350px;
             transition: max-height 500ms ease-in-out;
         }
+
         // 
     }
 
@@ -1264,6 +1246,7 @@ $maxWidth: 1200;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
 
@@ -1305,7 +1288,8 @@ $maxWidth: 1200;
             font-family: Roboto;
             font-size: 14px;
             font-weight: 400;
-            max-width: 320px;
+            max-width: 290px;
+            overflow-wrap: break-word;
         }
 
         &:hover {
@@ -1351,13 +1335,9 @@ $maxWidth: 1200;
     &__container {
         display: flex;
         flex-wrap: wrap;
-    }
+        justify-content: start;
+        flex-direction: row;
 
-    &__col {
-        flex: 0 0 25%;
-        max-width: 25%;
-        display: flex;
-        flex-direction: column;
     }
 
     &__bottom-button {}
@@ -1366,8 +1346,10 @@ $maxWidth: 1200;
 .blog-post {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    padding: 15px;
     min-width: 0;
+    flex: 0 0 25%;
+    max-width: 25%;
 
     &__title {
         color: #363636;
@@ -1415,48 +1397,6 @@ $maxWidth: 1200;
 
     &__content-wrapper {}
 
-    &__author {
-        text-align: center;
-        color: #959595;
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        margin-bottom: 35px;
-    }
-
-    &__quote {
-        color: #ffffff;
-        font-family: "Raleway - Semi Bold";
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: center;
-        margin-bottom: 20px;
-        margin-top: 35px;
-    }
-
-    &__youtube-video {
-        width: 100%;
-        // height: 100%;
-    }
-
-    &__slider {
-        position: relative;
-
-        .slick-dots {
-            position: absolute;
-            transform: translate(-50%, -50%);
-            bottom: 3%;
-            left: 50%;
-            margin-left: 0;
-        }
-    }
-
-    &__slider-item {
-        min-width: 0;
-    }
-
     &__img-wrapper {
         position: relative;
 
@@ -1478,24 +1418,10 @@ $maxWidth: 1200;
         display: none;
     }
 
-    .info-dot {
-        position: absolute;
-        transform: translate(0, 0);
-        top: 42%;
-        bottom: 64%;
-    }
-
-    .info-dot__zoom {
-        right: 50%;
-    }
-
-    .info-dot__link {
-        right: 28%;
-    }
-
     &__img {
-        width: 100%;
-        // max-height: 389px;
+        // width: 100%;
+
+        padding-top: 70%;
     }
 
     &:hover {
@@ -1520,53 +1446,8 @@ $maxWidth: 1200;
     }
 }
 
-// !!! 
-.blog-post_colapsed {
-    display: flex !important;
-    flex-direction: row;
-    min-width: 0;
-
-    .blog-post__content {
-        width: 50%;
-
-        // ! w100% когда в слайдере виден только один пост
-        width: 100%;
-    }
-
-    .blog-post__img {
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .blog-post__youtube-video {
-        width: 50%;
-        // height: 100%;
-    }
-}
 
 .post-image {}
-
-.post-slider {}
-
-.post-video {}
-
-// ! Пост с цитатами больше нигде не использовать
-.post-quote {
-    align-items: center;
-    background-image: url(../img/blog/img-quote.png);
-    padding: 40px 30px 40px 30px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    &__icon {}
-
-    &__icon_flipped {
-        transform: rotate(180deg);
-    }
-}
-
-.post-youtube {}
 
 
 .agency {
@@ -1591,7 +1472,8 @@ $maxWidth: 1200;
         &__title {
             color: #363636;
             font-family: Roboto;
-            font-size: 18px;
+            // font-size: 18px;
+            @include adaptiv-font(18, 15);
             font-weight: 400;
             line-height: 24px;
             margin-bottom: 30px;
@@ -1669,7 +1551,8 @@ $maxWidth: 1200;
         &__name {
             color: #363636;
             font-family: Raleway;
-            font-size: 18px;
+            // font-size: 18px;
+            @include adaptiv-font(18, 15);
             font-weight: 700;
             line-height: 20px;
             text-align: center;
@@ -1680,7 +1563,8 @@ $maxWidth: 1200;
         &__role {
             color: #cccccc;
             font-family: Roboto;
-            font-size: 13px;
+            // font-size: 13px;
+            @include adaptiv-font(15, 13);
             font-weight: 400;
             line-height: 20px;
             text-align: center;
@@ -1938,7 +1822,30 @@ $maxWidth: 1200;
     }
 }
 
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 
+    .page-numbers {
+        color: #ffffff;
+        font-size: 12px;
+        font-family: Roboto;
+        margin: 0px 10px 0px 10px;
+        background-color: #252525;
+        padding: 10px;
+        border-radius: 7%;
+    }
+}
+
+.post {
+    &__container {
+        max-width: 800px;
+        padding: 60px 0;
+        font-family: Roboto;
+        line-height: 20px;
+    }
+}
 
 
 @import '_media';
