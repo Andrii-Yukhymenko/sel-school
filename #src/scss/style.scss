@@ -1320,6 +1320,7 @@ $maxWidth: 1200;
 
 .blog {
     padding: 2.5% 0px 3% 0px;
+    position: relative;
 
     &__container {
         display: flex;
@@ -1330,6 +1331,14 @@ $maxWidth: 1200;
     }
 
     &__bottom-button {}
+
+    .easter-egg{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 1px;
+        height: 1px;
+    }
 }
 
 .blog-post {
