@@ -2146,8 +2146,8 @@ h6 {
 }
 
 .post__container {
-  max-width: 800px;
-  padding: 60px 0;
+  max-width: 830px;
+  padding: 60px 15px;
   font-family: Roboto;
   line-height: 20px;
 }
