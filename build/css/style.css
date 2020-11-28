@@ -972,7 +972,7 @@ h6 {
 
 .main-slider__title {
   color: #ffffff;
-  font-family: "Raleway - Extra Bold";
+  font-family: Roboto;
   font-size: 68px;
   font-weight: 400;
   text-align: center;
@@ -988,7 +988,7 @@ h6 {
 
 .main-slider__subtitle {
   color: #ffffff;
-  font-family: "Raleway - Extra Bold";
+  font-family: Roboto;
   font-size: 51px;
   font-weight: 400;
   text-align: center;
@@ -1004,7 +1004,7 @@ h6 {
 
 .main-slider__text {
   color: #ffffff;
-  font-family: Raleway;
+  font-family: Roboto;
   font-size: 27px;
   font-weight: 400;
   text-align: center;

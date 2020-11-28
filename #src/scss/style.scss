@@ -690,7 +690,7 @@ $maxWidth: 1200;
 
     &__title {
         color: #ffffff;
-        font-family: "Raleway - Extra Bold";
+        font-family: Roboto;
         // font-size: 68px;
         @include adaptiv-font(68, 40);
         font-weight: 400;
@@ -701,7 +701,7 @@ $maxWidth: 1200;
 
     &__subtitle {
         color: #ffffff;
-        font-family: "Raleway - Extra Bold";
+        font-family: Roboto;
         // font-size: 51px;
         @include adaptiv-font(51, 30);
         font-weight: 400;
@@ -712,7 +712,7 @@ $maxWidth: 1200;
 
     &__text {
         color: #ffffff;
-        font-family: Raleway;
+        font-family: Roboto;
         // font-size: 27px;
         @include adaptiv-font(27, 17);
         font-weight: 400;
