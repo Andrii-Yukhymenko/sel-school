@@ -430,6 +430,7 @@ h6 {
   border-bottom: 4px solid #e5493a;
   top: 100%;
   left: -20%;
+  width: 200px;
 }
 
 .header__menu-sub-item {
